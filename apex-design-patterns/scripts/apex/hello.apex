@@ -8,3 +8,11 @@
 string tempvar = 'Enter_your_name_here';
 System.debug('Hello World!');
 System.debug('My name is ' + tempvar);
+
+Pedido pedido = new Pedido(10);
+
+Santander banco = new Santander();
+
+CalculadoraDeJuros calcJuros = new CalculadoraDeJuros(banco);
+
+System.debug('calcJuros(pedido) ==> ' + calcJuros.calculaJuros(pedido));
